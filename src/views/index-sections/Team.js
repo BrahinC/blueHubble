@@ -2,18 +2,6 @@ import React from "react";
 
 // reactstrap components
 import {
-  Card,
-  CardImg,
-  CardTitle,
-  CardText,
-  CardHeader,
-  CardBody,
-  NavItem,
-  NavLink,
-  Nav,
-  TabContent,
-  TabPane,
-  Button,
   Container,
   Row,
   Col,
@@ -22,8 +10,8 @@ import {
 // core components
 
 function Team() {
-  const [firstFocus, setFirstFocus] = React.useState(false);
-  const [lastFocus, setLastFocus] = React.useState(false);
+  // const [firstFocus, setFirstFocus] = React.useState(false);
+  // const [lastFocus, setLastFocus] = React.useState(false);
   React.useEffect(() => {
     document.body.classList.add("landing-page");
     document.body.classList.add("sidebar-collapse");
@@ -38,18 +26,24 @@ function Team() {
   return (
     <div
       style={{ backgroundColor: "#f2f2f2" }}
-      className="section section-team text-center"
+      className="section section-team"
       id="team"
     >
       <Container>
         <h4
-          style={{ paddingBottom: "50px", color: "#ffb949" }}
-          className="category text-center"
+          style={{ paddingBottom: "10px", color: "#ffb949" }}
+          className="category "
         >
-          Team
+          Developed By:
         </h4>
-
-        <div className="team">
+        <div className="text-center">
+          <img
+            style={{ paddingBottom: "20px" }}
+            alt="..."
+            src={require("assets/img/logoBlue.png")}
+          ></img>
+        </div>
+        <div className="team text-center">
           <Row>
             <Col md="4">
               <div className="team-player">
@@ -64,25 +58,8 @@ function Team() {
                 </p>
                 <p className="description">
                   You can write here details about one of your team members. You
-                  can give more details about what they do. Feel free to add
-                  something
+                  can give more details about what they do.
                 </p>
-                <Button
-                  className="btn-icon btn-round"
-                  style={{ backgroundColor: "#029bc6" }}
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  <i className="fab fa-google-plus"></i>
-                </Button>
-                <Button
-                  className="btn-icon btn-round"
-                  style={{ backgroundColor: "#ffb949" }}
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  <i className="fab fa-linkedin"></i>
-                </Button>
               </div>
             </Col>
             <Col md="4">
@@ -98,17 +75,8 @@ function Team() {
                 </p>
                 <p className="description">
                   You can write here details about one of your team members. You
-                  can give more details about what they do. Feel free to add
-                  something
+                  can give more details about what they do
                 </p>
-                <Button
-                  className="btn-icon btn-round"
-                  style={{ backgroundColor: "#ffb949" }}
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  <i className="fab fa-linkedin"></i>
-                </Button>
               </div>
             </Col>
             <Col md="4">
@@ -124,25 +92,8 @@ function Team() {
                 </p>
                 <p className="description">
                   You can write here details about one of your team members. You
-                  can give more details about what they do. Feel free to add
-                  something
+                  can give more details about what they do
                 </p>
-                <Button
-                  className="btn-icon btn-round"
-                  style={{ backgroundColor: "#029bc6" }}
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  <i className="fab fa-google-plus"></i>
-                </Button>
-                <Button
-                  className="btn-icon btn-round"
-                  style={{ backgroundColor: "#ffb949" }}
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  <i className="fab fa-linkedin"></i>
-                </Button>
               </div>
             </Col>
           </Row>

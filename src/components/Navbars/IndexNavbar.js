@@ -1,18 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
 // reactstrap components
 import {
   Button,
   Collapse,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
   Form,
   FormGroup,
   Input,
-  Label,
-  FormText,
-  UncontrolledDropdown,
   NavbarBrand,
   Navbar,
   NavItem,

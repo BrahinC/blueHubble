@@ -37,7 +37,7 @@ function IndexHeader() {
             <img
               alt="..."
               className=""
-              src={require("assets/img/logo3.png")}
+              src={require("assets/img/logo.png")}
             ></img>
             <h5 style={{ color: "#233b80" }}>Supervises - Predicts - Unifies</h5>
             <Button

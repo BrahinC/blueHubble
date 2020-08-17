@@ -2,20 +2,10 @@ import React from "react";
 
 // reactstrap components
 import {
-  Card,
   CardImg,
   CardTitle,
   CardText,
-  CardHeader,
   CardBody,
-  CardDeck,
-  CardSubtitle,
-  NavItem,
-  NavLink,
-  Nav,
-  TabContent,
-  TabPane,
-  Button,
   Container,
   Row,
   Col,
@@ -25,8 +15,8 @@ import { Link } from "react-router-dom";
 // core components
 
 function Cards() {
-  const [iconPills, setIconPills] = React.useState("1");
-  const [pills, setPills] = React.useState("1");
+  // const [iconPills, setIconPills] = React.useState("1");
+  // const [pills, setPills] = React.useState("1");
   return (
     <>
       <div
