@@ -37,12 +37,12 @@ function Cards() {
                 <CardImg
                   top
                   width="100%"
-                  src={require("assets/img/default.jpg")}
+                  src={require("assets/img/uno.png")}
                   alt="Card image cap"
                 />
                 <CardBody>
                   <Link style={{ color: "#029bc6" }}>
-                    <CardTitle className="title" tag="h4">Hubble Recods</CardTitle>
+                    <CardTitle className="title" tag="h4">Hubble Records</CardTitle>
                   </Link>
 
                   <CardText>
@@ -58,7 +58,7 @@ function Cards() {
                 <CardImg
                   top
                   width="100%"
-                  src={require("assets/img/default.jpg")}
+                  src={require("assets/img/dos.png")}
                   alt="Card image cap"
                 />
                 <CardBody>
@@ -78,7 +78,7 @@ function Cards() {
                 <CardImg
                   top
                   width="100%"
-                  src={require("assets/img/default.jpg")}
+                  src={require("assets/img/tres.png")}
                   alt="Card image cap"
                 />
                 <CardBody>
