@@ -6,7 +6,7 @@ import { Container } from "reactstrap";
 
 function TransparentFooter() {
   return (
-    <footer className="footer">
+    <footer className="footer" id="blog">
       <Container>
         <nav>
           <ul>

@@ -39,6 +39,7 @@ function Team() {
     <div
       style={{ backgroundColor: "#f2f2f2" }}
       className="section section-team text-center"
+      id="team"
     >
       <Container>
         <h4

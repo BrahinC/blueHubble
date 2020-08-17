@@ -89,23 +89,42 @@ function IndexNavbar() {
           >
             <Nav navbar>
               <NavItem>
-                <NavLink>
+                <NavLink
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById("product").scrollIntoView();
+                  }}
+                >
                   <p>Product</p>
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById("team").scrollIntoView();
+                  }}
                 >
                   <p>Team</p>
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink>
+                <NavLink
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById("contact").scrollIntoView();
+                  }}
+                >
                   <p>Contact us</p>
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink>
+                <NavLink
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById("blog").scrollIntoView();
+                  }}
+                >
                   <p>Blog</p>
                 </NavLink>
               </NavItem>

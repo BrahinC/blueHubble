@@ -32,6 +32,7 @@ function Cards() {
       <div
         style={{ backgroundColor: "white" }}
         className="section section-team text-center"
+        id="product"
       >
         <Container>
           <h4

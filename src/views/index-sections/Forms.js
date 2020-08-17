@@ -17,7 +17,7 @@ import {
 
 function Forms() {
   return (
-    <div style={{ backgroundColor: "#ffb949" }} className="section">
+    <div style={{ backgroundColor: "#ffb949" }} className="section" id="contact">
       <Container style={{ backgroundColor: "white", borderRadius: "5px" }}>
         <Row>
           <Col className="ml-auto mr-auto" md="10" xl="6">
