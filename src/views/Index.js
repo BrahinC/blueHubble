@@ -13,6 +13,7 @@ import Cards from "./index-sections/Cards.js";
 import Team from "./index-sections/Team.js";
 import Forms from "./index-sections/Forms.js";
 import TransparentFooter from "components/Footers/TransparentFooter.js";
+import CreateModal from "./index-sections/CreateModal.js";
 
 function Index() {
   React.useEffect(() => {

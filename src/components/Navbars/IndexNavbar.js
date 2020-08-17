@@ -7,6 +7,11 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
+  Form,
+  FormGroup,
+  Input,
+  Label,
+  FormText,
   UncontrolledDropdown,
   NavbarBrand,
   Navbar,
@@ -15,9 +20,13 @@ import {
   Nav,
   Container,
   UncontrolledTooltip,
+  Modal,
+  ModalBody,
 } from "reactstrap";
 
 function IndexNavbar() {
+  const [modal1, setModal1] = React.useState(false);
+  const [modal2, setModal2] = React.useState(false);
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [collapseOpen, setCollapseOpen] = React.useState(false);
   React.useEffect(() => {
@@ -85,7 +94,8 @@ function IndexNavbar() {
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink>
+                <NavLink
+                >
                   <p>Team</p>
                 </NavLink>
               </NavItem>
@@ -101,16 +111,16 @@ function IndexNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink>
-                  <p>Login</p>
+                  <p onClick={() => setModal2(true)}>Login</p>
                 </NavLink>
               </NavItem>
               <NavItem>
                 <Button
                   className="nav-link btn-neutral"
-                  style={{ color: "#233b80"}}
+                  style={{ color: "#233b80" }}
                   href="#pablo"
                   id="upgrade-to-pro"
-                  onClick={(e) => e.preventDefault()}
+                  onClick={() => setModal1(true)}
                 >
                   <i className="now-ui-icons users_circle-08 mr-1"></i>
                   <p>Create account</p>
@@ -119,6 +129,103 @@ function IndexNavbar() {
             </Nav>
           </Collapse>
         </Container>
+        <Modal isOpen={modal1} toggle={() => setModal1(false)}>
+          <div className="modal-header justify-content-center">
+            <button
+              className="close"
+              type="button"
+              onClick={() => setModal1(false)}
+            >
+              <i className="now-ui-icons ui-1_simple-remove"></i>
+            </button>
+            <h4 className="title ">Create account</h4>
+          </div>
+          <ModalBody>
+            <Form>
+              <FormGroup>
+                <label htmlFor="name">Name</label>
+                <Input
+                  color="#ffb949"
+                  id="name"
+                  placeholder="Enter name"
+                  type="name"
+                ></Input>
+                <label htmlFor="exampleInputEmail1">Email address</label>
+                <Input
+                  aria-describedby="emailHelp"
+                  id="exampleInputEmail1"
+                  placeholder="Enter email"
+                  type="email"
+                ></Input>
+              </FormGroup>
+              <FormGroup>
+                <label htmlFor="exampleInputPassword1">Password</label>
+                <Input
+                  id="exampleInputPassword1"
+                  placeholder="Password"
+                  type="password"
+                ></Input>
+              </FormGroup>
+            </Form>
+          </ModalBody>
+          <div className="modal-footer">
+            <Button
+              color="danger"
+              type="button"
+              onClick={() => setModal1(false)}
+            >
+              Close
+            </Button>
+            <Button style={{ backgroundColor: "#029bC6" }} type="button">
+              Create
+            </Button>
+          </div>
+        </Modal>
+        <Modal isOpen={modal2} toggle={() => setModal2(false)}>
+          <div className="modal-header justify-content-center">
+            <button
+              className="close"
+              type="button"
+              onClick={() => setModal2(false)}
+            >
+              <i className="now-ui-icons ui-1_simple-remove"></i>
+            </button>
+            <h4 className="title ">Login</h4>
+          </div>
+          <ModalBody>
+            <Form>
+              <FormGroup>
+                <label htmlFor="exampleInputEmail1">Email address</label>
+                <Input
+                  aria-describedby="emailHelp"
+                  id="exampleInputEmail1"
+                  placeholder="Enter email"
+                  type="email"
+                ></Input>
+              </FormGroup>
+              <FormGroup>
+                <label htmlFor="exampleInputPassword1">Password</label>
+                <Input
+                  id="exampleInputPassword1"
+                  placeholder="Password"
+                  type="password"
+                ></Input>
+              </FormGroup>
+            </Form>
+          </ModalBody>
+          <div className="modal-footer">
+            <Button
+              color="danger"
+              type="button"
+              onClick={() => setModal2(false)}
+            >
+              Close
+            </Button>
+            <Button style={{ backgroundColor: "#029bC6" }} type="button">
+              Sign in
+            </Button>
+          </div>
+        </Modal>
       </Navbar>
     </>
   );
