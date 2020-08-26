@@ -53,7 +53,7 @@ function Team() {
                 <img
                   alt="..."
                   className="rounded-circle img-fluid img-raised"
-                  src={require("assets/img/default-avatar.png")}
+                  src={require("assets/img/1.jpg")}
                 ></img>
                 <h4 className="title">Diego Quintana</h4>
                 <p className="category" style={{ color: "#029bc6" }}>
@@ -70,7 +70,7 @@ function Team() {
                 <img
                   alt="..."
                   className="rounded-circle img-fluid img-raised"
-                  src={require("assets/img/default-avatar.png")}
+                  src={require("assets/img/2.jpg")}
                 ></img>
                 <h4 className="title">Sebastian Henao</h4>
                 <p className="category" style={{ color: "#029bc6" }}>
@@ -87,7 +87,7 @@ function Team() {
                 <img
                   alt="..."
                   className="rounded-circle img-fluid img-raised"
-                  src={require("assets/img/default-avatar.png")}
+                  src={require("assets/img/6.jpg")}
                 ></img>
                 <h4 className="title">Cristian Robles</h4>
                 <p className="category" style={{ color: "#029bc6" }}>
