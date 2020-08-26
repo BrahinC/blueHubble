@@ -18,9 +18,8 @@ function Cards() {
   // const [iconPills, setIconPills] = React.useState("1");
   // const [pills, setPills] = React.useState("1");
   return (
-    <>
       <div
-        style={{ backgroundColor: "white" }}
+        style={{ backgroundColor: "#ffffff" }}
         className="section section-team text-center"
         id="product"
       >
@@ -30,6 +29,17 @@ function Cards() {
             className="category text-center"
           >
             Product
+            <img
+              style={{
+                display: "scroll",
+               // position: "fixed",
+                bottom: "0px",
+                paddingLeft: "10px",
+                left: "0px",
+                maxWidth: "50px",
+              }}
+              src={require("assets/img/ISOTIPO.png")}
+            />
           </h4>
           <Row>
             <Col md="4">
@@ -98,7 +108,6 @@ function Cards() {
           </Row>
         </Container>
       </div>
-    </>
   );
 }
 

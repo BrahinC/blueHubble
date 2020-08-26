@@ -56,7 +56,11 @@ function IndexNavbar() {
         <Container>
           <div className="navbar-translate">
             <NavbarBrand target="_blank" id="navbar-brand">
-              <img alt="..." src={require("assets/img/logoNav.png")} />
+              <img
+                style={{ maxWidth: "185px" }}
+                alt="..."
+                src={require("assets/img/logo-blue.png")}
+              />
             </NavbarBrand>
             <UncontrolledTooltip target="#navbar-brand">
               BlueHuble!

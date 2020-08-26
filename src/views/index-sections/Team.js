@@ -1,11 +1,7 @@
 import React from "react";
 
 // reactstrap components
-import {
-  Container,
-  Row,
-  Col,
-} from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 
 // core components
 
@@ -34,6 +30,13 @@ function Team() {
           style={{ paddingBottom: "10px", color: "#ffb949" }}
           className="category "
         >
+          <img
+            style={{
+              left: "0px",
+              maxWidth: "80px",
+            }}
+            src={require("assets/img/inge.png")}
+          />
           Developed By:
         </h4>
         <div className="text-center">

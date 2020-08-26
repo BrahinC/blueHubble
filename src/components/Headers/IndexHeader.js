@@ -28,7 +28,7 @@ function IndexHeader() {
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/background1.jpg") + ")",
+            backgroundImage: "url(" + require("assets/img/fondo-network.png") + ")",
           }}
           ref={pageHeader}
         ></div>
@@ -37,7 +37,7 @@ function IndexHeader() {
             <img
               alt="..."
               className=""
-              src={require("assets/img/logo.png")}
+              src={require("assets/img/logo-blanco.png")}
             ></img>
             <h5 style={{ color: "#233b80" }}>Supervises - Predicts - Unifies</h5>
             <Button

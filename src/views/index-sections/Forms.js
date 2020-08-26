@@ -16,7 +16,11 @@ import {
 
 function Forms() {
   return (
-    <div style={{ backgroundColor: "#ffb949" }} className="section" id="contact">
+    <div
+      style={{ backgroundColor: "#ffb949" }}
+      className="section"
+      id="contact"
+    >
       <Container style={{ backgroundColor: "white", borderRadius: "5px" }}>
         <Row>
           <Col className="ml-auto mr-auto" md="10" xl="6">
@@ -24,7 +28,19 @@ function Forms() {
               style={{ paddingBottom: "50px" }}
               className="content-center text-center"
             >
-              <h4>Any question?</h4>
+              <h4>
+                Any question?
+                <img
+                  style={{
+                    display: "scroll",
+                    // position: "fixed",
+                    bottom: "0px",
+                    left: "0px",
+                    maxWidth: "80px",
+                  }}
+                  src={require("assets/img/hombremujer.png")}
+                />
+              </h4>
               <h7>
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
