@@ -13,6 +13,7 @@ import Cards from "./index-sections/Cards.js";
 import Team from "./index-sections/Team.js";
 import Forms from "./index-sections/Forms.js";
 import TransparentFooter from "components/Footers/TransparentFooter.js";
+import Pictures from "./index-sections/Gallery.js";
 
 function Index() {
   React.useEffect(() => {
@@ -33,6 +34,7 @@ function Index() {
         <IndexHeader />
         <div className="main">
           <Cards />
+          <Pictures></Pictures>
           <Team />
           <Forms />
         </div>
